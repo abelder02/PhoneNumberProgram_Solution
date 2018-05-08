@@ -11,6 +11,7 @@ namespace PhoneNumberProgram
     {
         static void Main(string[] args)
         {
+            Restart:
             CT.Header(out CT.LengthOfTopLine, "Ch. 5 Program 10", " to re-do "
                 + "the phone number prgm with arrays");
 
@@ -121,6 +122,15 @@ namespace PhoneNumberProgram
             DisplayNum[0], DisplayNum[1], DisplayNum[2], DisplayNum[3], DisplayNum[4],
             DisplayNum[5], DisplayNum[6], DisplayNum[7], DisplayNum[8], DisplayNum[9]);
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("If you wish to enter another number, enter <-911>:");
+            string input = Console.ReadLine();
+            if (input == "-911")
+            {
+                Console.Clear();
+                goto Restart;
+            }
             CT.Footer();
         }
 
