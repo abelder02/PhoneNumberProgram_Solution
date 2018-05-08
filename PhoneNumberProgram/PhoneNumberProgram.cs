@@ -19,6 +19,10 @@ namespace PhoneNumberProgram
             #region Mitch's Code
             /*Mitch take the stuff commented out right now...
              its the right code for you... the rest is an even better way to do it...
+             DONT FORGET THE THREE METHODS AT THE BOTTOM!!!!!!
+
+
+
             List<string> OriginalNumbers = new List<string>();            
 
             CT.Color("");
